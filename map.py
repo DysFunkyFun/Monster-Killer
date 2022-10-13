@@ -101,4 +101,4 @@ while current_position != my_map.end:
         else:
             print('You walk into a wall. idiot.\n')
 
-    
+# I can now make changes to your code without having to be in liveshare
