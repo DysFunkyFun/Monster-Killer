@@ -2,12 +2,14 @@ from gamestate import GameState
 from cmdsmanager import CommandsManager
 from commands import Commands
 from util import Util
+from cmdsmanager import EventsManager
 
 class Game(object):
 
     def __init__(self, game_state: GameState, commands_manager: CommandsManager):
         self.game_state = game_state
         self.commands_manager = commands_manager
+        self.events_manager = events_manager
 
     def step(self):
         

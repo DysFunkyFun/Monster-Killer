@@ -37,7 +37,7 @@ class Map:
 
     def connect_map(self):
         # Starting room
-        self.connect_rooms(self.start, north = self.b, east = self. a)
+        self.connect_rooms(self.start, north = self.b, east = self.a)
         # Room A
         self.connect_rooms(self.a, north = self.c, east = self.d, west = self.start)
         # Room B
@@ -70,7 +70,7 @@ current_position = my_map.start
 # Map traversal loop
 while current_position != my_map.end:
     # Get user direction
-    direction = input('Wyd hoe?: N, E, S, W\n')
+    direction = input('What direction would you like to go?: N, E, S, W\n')
 
     # For each direction attempt to change the current position to the room in that direction, if no room exists then give simple message.
     if direction == 'N':
